@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+/*----------------------------------------------------------------
+    Branding Colour
+----------------------------------------------------------------*/
+#content1a, #content2b, #content3a, #content5a, #content6b, #contact2c, #contact2d, #contact2e, #contact2f, #contact2g {display:none;}
+#content1b, #content2a, #content3b, #content5b, #content6a {width: 100%;}
+
+.content_block{padding-bottom:20px;}
+
+#content hr, h1, h2, h3, .contact_detail a, .contact_detail a:hover, .contact_detail a:focus, .formbuilder-form input#submit-form, #header2a a {
+    color: #00225c;
+}
+ #header2, #header2 a, .contact_detail, #banner p, #contact p, #banner1 h1  {
+    color:#fff;
+}
+p, ul, ul li, ul a, ul a:hover, ul a:focus{
+    color:#333;
+}
+#contact h3, #contact hr,#header2a, #header span, #services h3, .btn{
+    color:#ffd52e;
+}
+h1, h2, h3, #content h3, #contact h3, .formbuilder-form input#submit-form , p, ul, ul li, ul a, ul a:hover, ul a:focus  {
+    font-family: 'Roboto', sans-serif;}
+#contact hr {
+    border:3px solid #ffd52e;
+}
+#content{border-top:5px solid #00225c;}
+#content hr {
+    border:3px solid #00225c;
+}
+#banner hr{width:30%;}
+#banner h1, h3, .btn {text-transform:uppercase;}
+#header2, #header span, #header2a, #header2a p, #header2b a, #header2a a, .btn, .btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn, .formbuilder-form input#submit-form,.formbuilder-form input#submit-form:hover, .formbuilder-form input#submit-form:focus, .formbuilder-form input#submit-form:active, .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn , #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form, formbuilder-form input#submit-form:hover, .formbuilder-form input#submit-form:focus, .formbuilder-form input#submit-form:active, .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:focus, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:active, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn, #contact2f, #contact h3, #contact p, #contact2e, #contact2c, .contact_detail a, .contact_detail a:hover, .contact_detail a:focus {
+    text-decoration: none;}
+
+/*----------------------------------------------------------------
+    Buttons
+----------------------------------------------------------------*/
+.btn{
+    background-color:#00225c;
+    transition: 0.2s 0.2s ease-out;
+    text-shadow:none;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+    background-color:#5c95c4;
+    transform: scale(1.2);
+}
+/*----------------------------------------------------------------
+    Forms & Button
+----------------------------------------------------------------*/
+.form, #contact_form_form, #quote_form_form,#extraFormsContainer .modal-dialog {
+    background-color: #386791;
+    border-radius: 3px;
+    color: #ffd52e;
+}
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+#header2b a {
+    font-size:18px;}
+#header2{
+    padding-bottom: 25px;
+}
+/*----------------------------------------------------------------
+    Banner
+-------------------------------------0---------------------------*/
+#banner1 h1, #banner p{
+    margin:0;
+    text-align:center;
+}
+#banner1 h1{
+    font-size: 60px;
+}
+#banner p{
+    font-weight:100;
+    padding-bottom:20px;
+}
+.banner_cover {
+    opacity: 0.7;
+    background-color:#000;
+}
+#banner1{
+    width:100%;
+    animation:move 2s ease;
+    width: 100%;
+}
+#banner { order: 1;}
+@-webkit-keyframes move {
+  from {transform: scale(0.8);opacity:0;}
+  to {transform: scale(1.0);opacity:1;}}
+/*----------------------------------------------------------------
+    Services, Content, Gallery
+----------------------------------------------------------------*/
+#service1,#service2,#service3,#service4{
+    transition: 0.2s 0.2s ease-out;
+    padding: 25px 10px 25px 10px;}
+#service1:hover,#service2:hover,#service3:hover,#service4:hover{
+    transform: scale(1.1);}
+#content4b .img-responsive, #contact .img-responsive{
+    border: 10px solid #fff;
+    transition: 0.2s 0.2s ease-out;
+}
+#content4b .img-responsive:hover, #contact .img-responsive:hover{
+    border: 10px solid #5c95c4;
+    transform: scale(1.05);
+}
+
+#wrapper {display: flex; flex-direction: column;}
+#services { order: 2; }
+#banner { order: 1; }
+#content { order: 3; }
+#contact { order: 4; }
+footer { order: 5; }
+/*Footer*/
+footer *, footer a , footer {
+    color: #222;}
+footer {
+    order: 5;
+    border-top: 2px solid #ffd52e;
+    background-color: #fff;
+    padding: 25px 0 25px;}
+/*----------------------------------------------------------------
+    Media Queries
+----------------------------------------------------------------*/
+@media only screen and (max-width: 991px) and (min-width: 768px)  {
+    #service1:hover,#service2:hover,#service3:hover,#service4:hover{transform: none;}
+}
+@media only screen and (max-width: 767px) and (min-width: 0px)  {
+    #header2 {
+        padding-bottom: 140px;}
+    #header1 {margin-bottom:-15px}
+    #banner {padding: 0px 0 150px;}
+    .content_block {padding-bottom: 0px;}
+    #service1:hover,#service2:hover,#service3:hover,#service4:hover{transform: scale(1.05);}
+}
+@media (max-width: 480px) {
+    #service1:hover,#service2:hover,#service3:hover,#service4:hover{transform: scale(1.0);}
+    #banner h1 {
+        line-height: 40px;
+        font-size: 35px;}
+    #banner p {font-size: 18px;}
+}
+@media (max-width: 360px) {
+    #header2b {font-size: 20px;}
+    #header2 {padding-top: 0px;}
+}
+@media (max-width: 767px) {#service3 {clear:left }}
